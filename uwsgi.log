@@ -1,0 +1,184 @@
+*** Starting uWSGI 2.0.9 (32bit) on [Sat Feb 14 18:28:29 2015] ***
+compiled with version: 4.4.5 on 18 January 2015 03:17:35
+os: Linux-2.6.32-5-686-bigmem #1 SMP Mon Sep 23 23:38:27 UTC 2013
+nodename: dev
+machine: i686
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/apps-enabled
+detected binary path: /etc/uwsgi/ext/uwsgi/uwsgi.ruby
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/web/lily/lily/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/lily_uwsgi.sock fd 3
+Python version: 2.7.9 (default, Jan 18 2015, 04:13:54)  [GCC 4.4.5]
+Set PythonHome to /home/web/.envs/lily/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x9816450
+ruby 1.8.7 (2010-08-16 patchlevel 302) [i486-linux]
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 839036 bytes (819 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x9816450 pid: 8405 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8405)
+spawned uWSGI worker 1 (pid: 8406, cores: 1)
+spawned uWSGI worker 2 (pid: 8407, cores: 1)
+spawned uWSGI worker 3 (pid: 8408, cores: 1)
+spawned uWSGI worker 4 (pid: 8409, cores: 1)
+spawned uWSGI worker 5 (pid: 8410, cores: 1)
+spawned uWSGI worker 6 (pid: 8411, cores: 1)
+spawned uWSGI worker 7 (pid: 8412, cores: 1)
+spawned uWSGI worker 8 (pid: 8413, cores: 1)
+spawned uWSGI worker 9 (pid: 8414, cores: 1)
+spawned uWSGI worker 10 (pid: 8415, cores: 1)
+Sat Feb 14 18:28:35 2015 - received message 1 from emperor
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 8406)...
+Gracefully killing worker 2 (pid: 8407)...
+Gracefully killing worker 3 (pid: 8408)...
+Gracefully killing worker 4 (pid: 8409)...
+Gracefully killing worker 5 (pid: 8410)...
+Gracefully killing worker 6 (pid: 8411)...
+Gracefully killing worker 7 (pid: 8412)...
+Gracefully killing worker 8 (pid: 8413)...
+Gracefully killing worker 9 (pid: 8414)...
+Gracefully killing worker 10 (pid: 8415)...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+worker 9 buried after 2 seconds
+worker 10 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/apps-enabled
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/tmp/lily_uwsgi.sock)
+running /etc/uwsgi/ext/uwsgi/uwsgi.ruby
+*** has_emperor mode detected (fd: 8) ***
+[uWSGI] getting INI configuration from lily_uwsgi.ini
+*** Starting uWSGI 2.0.9 (32bit) on [Sat Feb 14 18:28:37 2015] ***
+compiled with version: 4.4.5 on 18 January 2015 03:17:35
+os: Linux-2.6.32-5-686-bigmem #1 SMP Mon Sep 23 23:38:27 UTC 2013
+nodename: dev
+machine: i686
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/apps-enabled
+detected binary path: /etc/uwsgi/ext/uwsgi/uwsgi.ruby
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/web/lily/lily/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /tmp/lily_uwsgi.sock fd 3
+Python version: 2.7.9 (default, Jan 18 2015, 04:13:54)  [GCC 4.4.5]
+Set PythonHome to /home/web/.envs/lily/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x944f438
+ruby 1.8.7 (2010-08-16 patchlevel 302) [i486-linux]
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 839036 bytes (819 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x944f438 pid: 8405 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8405)
+spawned uWSGI worker 1 (pid: 8423, cores: 1)
+spawned uWSGI worker 2 (pid: 8424, cores: 1)
+spawned uWSGI worker 3 (pid: 8425, cores: 1)
+spawned uWSGI worker 4 (pid: 8426, cores: 1)
+spawned uWSGI worker 5 (pid: 8427, cores: 1)
+spawned uWSGI worker 6 (pid: 8428, cores: 1)
+spawned uWSGI worker 7 (pid: 8429, cores: 1)
+spawned uWSGI worker 8 (pid: 8430, cores: 1)
+spawned uWSGI worker 9 (pid: 8431, cores: 1)
+spawned uWSGI worker 10 (pid: 8432, cores: 1)
+[pid: 8424|app: 0|req: 1/1] 130.113.126.253 () {40 vars in 865 bytes} [Sat Feb 14 18:28:38 2015] GET / => generated 1759 bytes in 99 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 8429|app: 0|req: 1/2] 130.113.126.253 () {38 vars in 785 bytes} [Sat Feb 14 18:28:39 2015] GET /favicon.ico => generated 1932 bytes in 21 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Sat Feb 14 18:31:08 2015 - received message 1 from emperor
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 8423)...
+Gracefully killing worker 2 (pid: 8424)...
+Gracefully killing worker 3 (pid: 8425)...
+Gracefully killing worker 4 (pid: 8426)...
+Gracefully killing worker 5 (pid: 8427)...
+Gracefully killing worker 6 (pid: 8428)...
+Gracefully killing worker 7 (pid: 8429)...
+Gracefully killing worker 8 (pid: 8430)...
+Gracefully killing worker 9 (pid: 8431)...
+Gracefully killing worker 10 (pid: 8432)...
+worker 7 buried after 1 seconds
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 8 buried after 2 seconds
+worker 9 buried after 2 seconds
+worker 10 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/apps-enabled
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/tmp/lily_uwsgi.sock)
+running /etc/uwsgi/ext/uwsgi/uwsgi.ruby
+*** has_emperor mode detected (fd: 8) ***
+[uWSGI] getting INI configuration from lily_uwsgi.ini
+*** Starting uWSGI 2.0.9 (32bit) on [Sat Feb 14 18:31:10 2015] ***
+compiled with version: 4.4.5 on 18 January 2015 03:17:35
+os: Linux-2.6.32-5-686-bigmem #1 SMP Mon Sep 23 23:38:27 UTC 2013
+nodename: dev
+machine: i686
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/apps-enabled
+detected binary path: /etc/uwsgi/ext/uwsgi/uwsgi.ruby
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/web/lily/lily/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /tmp/lily_uwsgi.sock fd 3
+Python version: 2.7.9 (default, Jan 18 2015, 04:13:54)  [GCC 4.4.5]
+Set PythonHome to /home/web/.envs/lily/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x82dd438
+ruby 1.8.7 (2010-08-16 patchlevel 302) [i486-linux]
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 839036 bytes (819 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x82dd438 pid: 8405 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8405)
+spawned uWSGI worker 1 (pid: 8501, cores: 1)
+spawned uWSGI worker 2 (pid: 8502, cores: 1)
+spawned uWSGI worker 3 (pid: 8503, cores: 1)
+spawned uWSGI worker 4 (pid: 8504, cores: 1)
+spawned uWSGI worker 5 (pid: 8505, cores: 1)
+spawned uWSGI worker 6 (pid: 8506, cores: 1)
+spawned uWSGI worker 7 (pid: 8507, cores: 1)
+spawned uWSGI worker 8 (pid: 8508, cores: 1)
+spawned uWSGI worker 9 (pid: 8509, cores: 1)
+spawned uWSGI worker 10 (pid: 8510, cores: 1)
+[pid: 8503|app: 0|req: 1/1] 130.113.126.253 () {40 vars in 865 bytes} [Sat Feb 14 18:31:11 2015] GET / => generated 1759 bytes in 61 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
