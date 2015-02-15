@@ -30,6 +30,11 @@ ALLOWED_HOSTS = []
 
 MAX_DEEDS_PER_DAY = 100 # Must be an integer > 1
 
+POINT_TYPES = ( # DO not change the order of these.
+    ("FRSTDEED", "First to pay a deed forward."),
+    ("DEEDPAID", "User's deed has been paid forward."),
+    ("PAYDEED",  "User has paid deed forward."),
+)
 # Application definition
 
 CUSTOM_APPS = (

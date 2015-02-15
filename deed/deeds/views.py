@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render_to_response
 from deeds.models import Deed
 from rest_framework import viewsets
 from deeds.serializers import DeedSerializer
@@ -17,3 +17,8 @@ def RecentCompletedView(request):
     activity_serializer = ActivityDetailSerializer(
         activity, many=False, context={'request': request})
     return Response(activity_serializer.data)
+
+def home(request):
+	deeds = Deed.objects.all().order_by('-created')[:100]
+	context = {"deeds":deeds}
+	return render_to_response('index.html', context)

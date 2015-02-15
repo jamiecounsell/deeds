@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets, status
-from users.serializers import UserSerializer, NewUserSerializer
+from users.serializers import UserSerializer, NewUserSerializer, UserProfileSerializer
 from users.models import UserProfile
 from django.contrib.auth.models import User
 from rest_framework.decorators import api_view, permission_classes
@@ -52,3 +52,13 @@ def detail(request, pk):
         return Response(serialized._errors,
                         status=status.HTTP_400_BAD_REQUEST)
 
+
+@api_view(['GET'])
+def leaderboard(request):
+    users = sorted(UserProfile.objects.all(), key=lambda x: x.points, reverse=True)[:5]
+    serialized = UserProfileSerializer(users, many=True)
+    if serialized.data:
+        return Response(serialized.data, status=status.HTTP_200_OK)
+    else:
+        return Response(serialized._errors,
+                        status=status.HTTP_404_NOT_FOUND)
